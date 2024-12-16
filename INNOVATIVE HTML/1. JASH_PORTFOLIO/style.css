@@ -1,0 +1,109 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: rgba(171, 129, 51, 0.527);
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+header {
+  color:  .k;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header .highlight {
+  color: #ff4757;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+header nav ul li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+/* Profile Section Layout */
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Adds spacing between the text and the photo */
+}
+
+/* Text Styling */
+.about-me .text {
+  max-width: 60%; /* Text takes up 60% of the container width */
+}
+
+.about-me .text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-me .text p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Photo Styling */
+.about-me .photo-container {
+  flex-shrink: 0; /* Prevents the photo from shrinking */
+  text-align: right; /* Aligns the photo to the right */
+}
+
+.profile-photo {
+  width: 250px;
+  height: 350px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
